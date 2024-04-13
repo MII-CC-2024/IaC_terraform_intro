@@ -1,6 +1,6 @@
 # Introducción a Terraform
 
-## Instalación
+## Instalación de Terraform CLI
 (Actualización: abril 2024)
 
 Desde la página de downloads de terraform (https://www.terraform.io/downloads.html) descarga la versión adecuada para tu sistema operativo
@@ -97,16 +97,48 @@ Plan Customization Options:
 ...
 ```
 
-
 ## Aspectos básicos. Documentación
 
 La infracestructura con Terraform se crea mediante un conjunto de ficheros (.tf),
 llamados ficheros de configuración, que incluyen: identificación del proveedor o proveedores,
 creación de recursos, definición de variables, uso de datos, outputs, etc.
 
+### Lenguaje Terraform 
+
+```
+<BLOCK TYPE> "<BLOCK LABEL>" "<BLOCK LABEL>" {
+  # Block body
+  <IDENTIFIER> = <EXPRESSION> # Argument
+    ...
+  <IDENTIFIER> = <EXPRESSION> # Argument
+}
+```
+
+### Flujo de Trabajo (Workflow)
+
+1.- Creación de los fichero .tf
+    - providers
+    - resources
+    - datasources
+    - variables
+    - outputs
+2.- Terraform init
+3.- Terraform fmt
+4.- Terraform validate
+5.- Terraform plan
+6.- Terraform apply
+7.- Terraform destroy
+
+### Tutoriales
+
+https://developer.hashicorp.com/terraform/tutorials
+
+### Proveedores
+https://www.terraform.io/docs/providers/index.html
+
 Puedes obtener información sobre los proveedores en:
 
-https://www.terraform.io/docs/providers/index.html
+https://registry.terraform.io/browse/providers
 
 Dentro de cada proveedor puedes consultar la documentación para crear los recursos disponibles:
 
