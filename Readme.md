@@ -117,16 +117,27 @@ creación de recursos, definición de variables, uso de datos, outputs, etc.
 ### Flujo de Trabajo (Workflow)
 
 1.- Creación de los fichero .tf
+
     - providers
+
     - resources
+
     - datasources
+
     - variables
-    - outputs
+
+    - outputs, etc.
+    
 2.- Terraform init
+
 3.- Terraform fmt
+
 4.- Terraform validate
+
 5.- Terraform plan
+
 6.- Terraform apply
+
 7.- Terraform destroy
 
 ### Tutoriales
