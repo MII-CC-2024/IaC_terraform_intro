@@ -118,15 +118,12 @@ creación de recursos, definición de variables, uso de datos, outputs, etc.
 
 1.- Creación de los fichero .tf
 
-    - providers
+* providers
+* resources
+* datasources
+* variables
+* outputs, etc.
 
-    - resources
-
-    - datasources
-
-    - variables
-
-    - outputs, etc.
     
 2.- Terraform init
 
